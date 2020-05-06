@@ -1,13 +1,46 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/products/product-list",
+    "pages/userprofiles/profile"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#F4B0B2",
+    "navigationBarTitleText": "优忧教育",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#fff",
+    "onReachBottomDistance":30,
+    "enablePullDownRefresh":true
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"images/tabbar/home.png",
+        "selectedIconPath":"images/tabbar/home-h.png"
+      },
+      {
+        "pagePath": "pages/products/product-list",
+        "text": "课程",
+        "iconPath":"images/tabbar/course.png",
+        "selectedIconPath":"images/tabbar/course-h.png"
+      },
+      {
+        "pagePath": "pages/userprofiles/profile",
+        "text": "个人中心",
+        "iconPath":"images/tabbar/user.png",
+        "selectedIconPath":"images/tabbar/user-h.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "更多",
+        "iconPath":"images/tabbar/product.png",
+        "selectedIconPath":"images/tabbar/product-h.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

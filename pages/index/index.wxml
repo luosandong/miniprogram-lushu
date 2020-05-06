@@ -1,13 +1,23 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+ <swiper class="banner" indicator-dots indicator-active-color="rgb(66,66,66,1)"
+ autoplay interval="3000" circular
+ >
+  <swiper-item>
+    <image src="/images/cover/fm1.jpg" mode="widthFix">  </image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/cover/fm2.jpg" mode="widthFix">  </image>
+  </swiper-item>
+ </swiper>
+
+ <scroll-view scroll-x="true">
+  <view id="demo1" class="scroll-view-item_H demo-text-1">111</view>
+  <view id="demo1" class="scroll-view-item_H demo-text-1">222</view>
+  <view id="demo1" class="scroll-view-item_H demo-text-1">333</view>
+  <view id="demo1" class="scroll-view-item_H demo-text-1">444</view>
+  <view id="demo1" class="scroll-view-item_H demo-text-1">555</view>
+  <view id="demo1" class="scroll-view-item_H demo-text-1">666</view>
+  <view id="demo1" class="scroll-view-item_H demo-text-1">777</view>
+ </scroll-view>
 </view>
